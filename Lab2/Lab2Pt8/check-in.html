@@ -2,9 +2,108 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Assignment 2.8 - AnishSudhanNair</title>
+    <style media="screen">
+      lable, input, select{
+        margin-bottom:7px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Sorry, the site is currently under maintenance</h1>
+    <center style="padding:5px">
+      <h1>Search for Resorts!</h1>
+    </center>
+
+    <form action="form_result.html">
+      <fieldset>
+        <!-- <legend>Booking Information</legend> -->
+
+      <h2>Resort Booking Information</h2>
+      <label for="location">Location </label> <br>
+      <select name="location" id="location">
+        <option value="Goa">Goa</option>
+        <option value="Mussoorie">Mussoorie</option>
+        <option value="Alappuzha">Alappuzha</option>
+      </select>
+      <br>
+      <label for="occupants_adult">No. of Adults </label> <br>
+      <input type="text" id="occupants_adult" name="occupants_adult">
+      <br>
+      <label for="occupants_child">No. of Children </label> <br>
+      <input type="text" id="occupants_child" name="occupants_child">
+      <br>
+
+      <label for="check_in">Check-in </label> <br>
+      <input type="date" id="check_in" name="check_in">
+      <br>
+      <label for="check_out">Check-out </label> <br>
+      <input type="date" id="check_out" name="check_out">
+      <br>
+      <label for="price">Pricing </label> <br>
+      2000 <input type="range" name="price" value="10000" min="2000" max="50000"> 50000
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <h2>Customer Booking Information</h2>
+
+      <label for="firstname">First Name: </label> <br>
+      <input type="text" id="firstname" name="firstname">
+      <br>
+      <label for="lastname">Last Name: </label> <br>
+      <input type="text" id="lastname" name="lastname">
+      <br>
+      <br>
+      <label for="gender">Gender: </label> <br>
+      <input type="radio" id="gender" name="gender" value="male">Male
+      <input type="radio" id="gender" name="gender" value="female">Female
+      <input type="radio" id="gender" name="gender" value="others">Others
+      <br>
+      <br>
+      <label for="status">Marriage Status: </label> <br>
+      <select name="status" id="status">
+        <option value="married">Married</option>
+        <option value="unmarried">Unmarried</option>
+        <option value="divorced">Divorced</option>
+      </select>
+      <br>
+      <br>
+      <label for="address">Residence </label> <br>
+      <textarea name="address" rows="5" cols="20"></textarea>
+      <br>
+      <br>
+      <label for="mobile">Mobile No. </label> <br>
+      <input type="tel" id="mobile" name="mobile">
+      <br>
+      <label for="email">Email Id </label> <br>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="password">Password </label> <br>
+      <input type="password" id="password" name="password" minlength="8">
+      <br>
+      <label for="confirm_password">Confirm Password </label> <br>
+      <input type="password" id="confirm_password" name="confirm_password" minlength="8">
+      <br>
+      <br>
+      <label for="image">Profile Picture </label>
+      <input type="file" name="image" id="image" accept="image/*">
+      <br>
+      </fieldset>
+    <br>
+      <fieldset>
+      <h2>Enquiry Submission</h2>
+      <label for="notifs">Email notifications </label> <br>
+      <input type="checkbox" id="news" name="news" value="Newsletter">
+      <label for="news">Newsletter</label> <br>
+      <input type="checkbox" id="promo" name="promo" value="Promotions">
+      <label for="promo">Promotions</label> <br>
+      <br>
+      <!-- Submit button -->
+      <input type="submit" name="submit" value="Submit">
+      <input type="reset" name="reset" value="Reset">
+
+      </fieldset>
+    </form>
   </body>
 </html>
