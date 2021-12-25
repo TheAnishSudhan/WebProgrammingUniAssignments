@@ -1,0 +1,48 @@
+.cursor{
+  color: green;
+  font-family: serif;
+  font-weight: bold;
+}
+
+#link{
+  /* color: red; */
+  font-weight:900;
+  text-decoration: none;
+  margin-top: 100px;
+  line-height: 400%
+}
+
+.Center{
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: black;
+  font-weight:100;
+  font-family:"Lucida Bright", sans-serif;
+  text-align: center;
+  word-spacing: 10px;
+  letter-spacing: -3px;
+}
+
+.Right{
+  color: red;
+  text-decoration: overline;
+  text-align: right;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+a:link{
+  color: green;
+}
+
+a:visited{
+  color: red;
+}
+
+a:hover{
+  color: hotpink;
+}
+
+a:active{
+  color:blue;
+}
