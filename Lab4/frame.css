@@ -1,0 +1,27 @@
+#frame{
+  border: 3px solid red;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+#frame1{
+  border: 3px dotted green;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+#frame2{
+  border: 3px dashed yellow;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+#frame3{
+  border: 3px double black;
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+}
