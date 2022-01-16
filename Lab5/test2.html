@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <style media="screen">
+    div{
+      width:300px;
+      height:100px;
+      background:red;
+      transition:width 2s, height 2s, transform 5s;
+
+      /* width:100px;
+      height:100px;
+      background:red; */
+      /* -webkit-transition:transform 2s; */
+    }
+    div:hover{
+        /* -webkit- */
+        transform:translate(100dpx,100px);
+      width:500px;
+      height:100px;
+
+    }
+    #div1{
+      transition-timing-function: linear;
+    }
+    #div2{
+      transition-timing-function:cubic-bezier();/*Takes 4 values
+
+      Start point, control point 1, control point 2, end point
+
+      imagine a curve on a graph with two end points and two points
+      in between which dictate shape of curve
+
+      or maybe its jut 2 points
+
+      P1 (x1,y1)
+      P2(x2,y2)
+
+      Curve(x1,y1,x2,y2)
+
+      x1 and x2 lie between 0 and 1*/
+    }
+    #div3{
+      transition-timing-function:ease;
+    }
+    #div4{
+      transition-timing-function:ease-in;
+    }
+    #div5{
+      transition-timing-function:ease-in-out;
+    }
+    #div6{
+      transition-timing-function:ease-out;
+    }
+    #div7{
+      transition-timing-function:step-end;
+    }
+    #div8{
+      transition-timing-function:step-start;
+    }
+    #div9{
+      transition-timing-function:steps();
+    }
+  </style>
+    <title></title>
+  </head>
+  <body>
+    <div id="div1">Block</div>
+    <div id="div2">Block</div>
+    <div id="div3">Block</div>
+    <div id="div4">Block</div>
+    <div id="div5">Block</div>
+    <div id="div6">Block</div>
+    <div id="div7">Block</div>
+    <div id="div8">Block</div>
+    <div id="div9">Block</div>
+
+  </body>
+</html>
