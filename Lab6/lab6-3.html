@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+
+      function validate() {
+        var age=parseInt(prompt('Enter the age: '));
+        var gender=(prompt('Enter the gender: '));
+        var vote="Can't vote\n";
+        var ans ="Person is ineligible";
+        if (age>18) {
+          vote="Can vote\n";
+        }
+        if (age<=25 && age>18 && gender=="Male") {
+          ans="Youth participants";
+        }
+        if (age<=25 && age>18 && gender=="Female") {
+          ans="Young participants";
+        }
+        if (age<=45 && age>25) {
+          ans="Mature participants";
+        }
+        if (age<=65 && age>45) {
+          ans="Super Mature participants";
+        }
+        if (age>60) {
+          ans="Senior Citizens";
+        }
+        document.write(vote);
+        document.write(ans);
+      }
+    </script>
+  </head>
+  <body>
+
+  <script type="text/javascript">
+    validate();
+
+  </script>
+
+  </body>
+</html>

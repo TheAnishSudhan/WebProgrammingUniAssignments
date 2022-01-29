@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <p id="demo"></p>
+  <body>
+    <button onclick="myFunction()">Try It</button>
+
+    <script type="text/javascript">
+      var cars=["Saab","BMW","Volvo"];
+      document.getElementById("demo").innerHTML = cars;
+
+      function myFunction(){
+        cars.push("Suzuki");
+
+        document.getElementById("demo").innerHTML = cars;
+      }
+
+    </script>
+
+  </body>
+</html>
