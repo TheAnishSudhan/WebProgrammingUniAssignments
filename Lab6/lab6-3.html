@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript">
-
-      function validate() {
-        var age=parseInt(prompt('Enter the age: '));
-        var gender=(prompt('Enter the gender: '));
-        var vote="Can't vote\n";
-        var ans ="Person is ineligible";
-        if (age>18) {
-          vote="Can vote\n";
-        }
-        if (age<=25 && age>18 && gender=="Male") {
-          ans="Youth participants";
-        }
-        if (age<=25 && age>18 && gender=="Female") {
-          ans="Young participants";
-        }
-        if (age<=45 && age>25) {
-          ans="Mature participants";
-        }
-        if (age<=65 && age>45) {
-          ans="Super Mature participants";
-        }
-        if (age>60) {
-          ans="Senior Citizens";
-        }
-        document.write(vote);
-        document.write(ans);
-      }
-    </script>
+    <title></title>
   </head>
   <body>
+    <!-- <p id="id1"></p> -->
 
-  <script type="text/javascript">
-    validate();
+    <script type="text/javascript">
 
-  </script>
+      var fruits,text,fLen, i;
+
+      student=["Anish", "Sudhan", "Nair", "Rajendran"];
+      fLen=student.length;
+      text="<ol>";
+        for ( i = 0; i < array.length; i++) {
+          array[i]
+        }
+
+      document.getElementById('id1').innerHTML=Math.pow(4,3)
+
+      function exponent(b,e) {
+        var i, pow=1;
+        for ( i = 0; i < e; i++) {
+          pow=pow*b;
+        }
+        return pow;
+      }
+    </script>
+    <script type="text/javascript">
+      var a=exponent(5,2);
+      document.write(a);
+
+    </script>
 
   </body>
 </html>

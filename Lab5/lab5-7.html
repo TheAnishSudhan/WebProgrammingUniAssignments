@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var sub1=parseInt(prompt('Enter the marks for subject 1: '));
+      var sub2=parseInt(prompt('Enter the marks for subject 2: '));
+      var sub3=parseInt(prompt('Enter the marks for subject 3: '));
+      var sub4=parseInt(prompt('Enter the marks for subject 4: '));
+      // var marks=[45,67,89,30];
+      var marks=[sub1, sub2, sub3, sub4]
+      var total=0;
+
+      for (var i = 0; i < marks.length; i++) {
+        total+=marks[i];
+      }
+        var avg=(total/marks.length);
+        document.write("The average of the marks is "+avg);
+
+    </script>
+
+  </body>
+</html>

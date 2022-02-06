@@ -4,15 +4,13 @@
   </head>
   <body>
     <script type="text/javascript">
-      var marks=[45,67,89,30];
-      var total=0;
+      var marks=[1,2,3,4,5,6,7,8,9,20];
 
       for (var i = 0; i < marks.length; i++) {
-        total+=marks[i];
+        if (marks[i]%3==0) {
+          document.write(marks[i]+" is divisible by 3 <br />")
+        }
       }
-        var avg=(total/marks.length);
-        document.write(avg);
-
     </script>
 
   </body>

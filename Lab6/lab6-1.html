@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript">
-
-      function palindrome() {
-        var rem, rev=0, no, temp;
-        no=Number(document.getElementById("abc").value);
-        temp=no;
-        while(no>0) {
-          rem=no%10;
-          rev=rev+rem;
-          rev=(rev*10);
-          no=parseInt(no/10);
-        }
-        rev=rev/10;
-        if (rev==temp) {
-          window.alert("This is a palindrome");
-        }
-        else {
-          window.alert('Not palindrome');
-        }
-      }
-    </script>
+    <title></title>
   </head>
   <body>
+    <!-- <p id="id1"></p> -->
 
-    Enter the number: <input id="abc">
-    <button onclick="palindrome()">Check</button>
+    <script type="text/javascript">
+
+      document.getElementById('id1').innerHTML=Math.pow(4,3)
+
+      function exponent(b,e) {
+        var i, pow=1;
+        for ( i = 0; i < e; i++) {
+          pow=pow*b;
+        }
+        return pow;
+      }
+    </script>
+    <script type="text/javascript">
+      var a=exponent(5,2);
+      document.write(a);
+
+    </script>
 
   </body>
 </html>
