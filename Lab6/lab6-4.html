@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 6.4 - AnishSudhanNair</title>
+  </head>
+  <body>
+    <p id="id1">Hover Mouse here!</p>
+
+    <script type="text/javascript">
+
+      var student;
+
+      student=["Anish", "Sudhan", "Nair", "Rajendran", "Rando"];
+
+        function mouseOver() {
+             document.getElementById('id1').innerHTML=student;
+        }
+
+        function mouseOut() {
+          document.getElementById('id1').innerHTML="Hover mouse here again!";
+        }
+
+      document.getElementById('id1').addEventListener("mouseover",mouseOver);
+      document.getElementById('id1').addEventListener("mouseout", mouseOut);
+
+    </script>
+
+  </body>
+</html>

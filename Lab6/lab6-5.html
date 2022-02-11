@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 6.5 - AnishSudhanNair</title>
+  </head>
+  <body>
+
+    <p id="id1">
+    <img src="img1.jpeg" alt="" height="300" width="600"><br>
+    Click the Image
+  </p>
+
+    <script type="text/javascript">
+
+      var student;
+
+      student=["Anish", "Sudhan", "Nair", "Rajendran", "Rando"];
+
+        function mouseClick() {
+          var spliceStudent=student.splice(0, 3)
+          document.getElementById('id1').innerHTML=spliceStudent;
+        }
+
+        function mouseOut() {
+          document.getElementById('id1').innerHTML="<img src='img1.jpeg' height='300' width='600'>Click here again!";
+        }
+
+      document.getElementById('id1').addEventListener("click", mouseClick);
+      document.getElementById('id1').addEventListener("mouseout", mouseOut);
+
+    </script>
+
+  </body>
+</html>

@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <title>Assignment 6.3 - AnishSudhanNair</title>
   </head>
   <body>
-    <!-- <p id="id1"></p> -->
+    <p id="id1"></p>
 
     <script type="text/javascript">
 
       var fruits,text,fLen, i;
 
-      student=["Anish", "Sudhan", "Nair", "Rajendran"];
+      student=["Anish", "Sudhan", "Nair", "Rajendran", "Rando"];
       fLen=student.length;
       text="<ol>";
-        for ( i = 0; i < array.length; i++) {
-          array[i]
+        for ( i = 0; i < fLen; i++) {
+          text+="<li>" + student[i] + "</li>"
         }
+        text+="</ol>"
 
-      document.getElementById('id1').innerHTML=Math.pow(4,3)
-
-      function exponent(b,e) {
-        var i, pow=1;
-        for ( i = 0; i < e; i++) {
-          pow=pow*b;
-        }
-        return pow;
-      }
-    </script>
-    <script type="text/javascript">
-      var a=exponent(5,2);
-      document.write(a);
+      document.getElementById('id1').innerHTML=text;
 
     </script>
 

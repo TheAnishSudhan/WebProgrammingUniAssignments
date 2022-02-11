@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 6.8 - AnishSudhanNair</title>
+  </head>
+
+  <body>
+    <center>
+    <h1 style="margin-top: 30px">Form Validation</h1>
+    </center>
+      <form action="form_result.html" name="formValidation" onsubmit="return validate()">
+        <fieldset>
+
+        <label for="username">User Name: </label> <br>
+        <input type="text" id="username" name="username">
+        <br>
+        <label for="userage">User Age: </label> <br>
+        <input type="text" id="userage" name="userage">
+        <br>
+        <label for="phone">Phone: </label> <br>
+        <input type="text" id="phone" name="phone">
+        <br>
+        <br />
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="reset" value="Reset">
+        <p id="error"></p>
+        </fieldset>
+      </form>
+      <script type="text/javascript">
+
+      function validate() {
+
+        if ((document.formValidation.username.value=="")||(document.formValidation.userage.value=="")||(document.formValidation.phone.value=="")) {
+          document.getElementById("error").innerHTML="Input cannot be empty";
+          return (false);
+        }
+
+        if (document.formValidation.username.value.length!=10) {
+          document.getElementById("error").innerHTML="Username must be 10 characters long";
+          return (false);
+        }
+
+        if ((isNaN(document.formValidation.userage.value))||(document.formValidation.userage.value<20)||(document.formValidation.userage.value>90)) {
+          document.getElementById("error").innerHTML="Age must be between 20 and 90";
+          return (false);
+        }
+
+        if ((isNaN(document.formValidation.phone.value))|(document.formValidation.phone.value.length!=10)) {
+          document.getElementById("error").innerHTML="Phone number must be 10 digits (numeric) long";
+          return (false);
+        }
+
+        return (true);
+
+      }
+
+      </script>
+  </body>
+</html>

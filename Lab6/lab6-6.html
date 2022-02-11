@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 6.6 - AnishSudhanNair</title>
+  </head>
+  <body>
+    <p id="id1">Click here amigo!</p>
+    <script type="text/javascript">
+
+      var boys=["Anish", "Athul", "Ashok", "Aniketh"];
+      var girls=["Mary Jane", "Lois Lane", "Carol Ferris", "Iris West"];
+
+      function mouseClick() {
+        var kids=boys.concat(girls);
+        document.getElementById('id1').innerHTML=kids;
+      }
+
+      document.getElementById('id1').addEventListener("click", mouseClick);
+    </script>
+  </body>
+</html>

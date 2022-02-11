@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Assignment 6.7 - AnishSudhanNair</title>
+  </head>
+  <body>
+
+    <p id="id0">
+    Click to slice <br>
+    student = ["Anish", "Sudhan", "Nair", "Rajendran", "Rando", "Out", "Of", "Names", "Seriously"]
+  </p>
+  <p id="id1"></p>
+  <p id="id2"></p>
+  <p id="id3"></p>
+
+    <script type="text/javascript">
+
+      var student;
+      student=["Anish", "Sudhan", "Nair", "Rajendran", "Rando", "Out", "Of", "Names", "Seriously"];
+
+
+        function slicer() {
+          let spliceStudent1=student.splice(0, 3);
+          let spliceStudent2=student.splice(0, 3);
+          let spliceStudent3=student.splice(0, 3);
+          document.getElementById('id1').innerHTML=spliceStudent1;
+          document.getElementById('id2').innerHTML=spliceStudent2;
+          document.getElementById('id3').innerHTML=spliceStudent3;
+        }
+
+      document.getElementById('id0').addEventListener("click", slicer);
+
+    </script>
+
+  </body>
+</html>
