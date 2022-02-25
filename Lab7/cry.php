@@ -119,6 +119,18 @@
       $arr[$i]=strtoupper($arr[$i]);
       echo "<br>".$arr[$i];
     }
+    $s=70;
+
+
+    function FunctionName($s)
+    {
+      echo var_dump($s);
+      echo $y=$s+1;
+      echo var_dump($y);
+      echo var_dump($s);
+    }
+
+    FunctionName("80");
 
 
     ?>
