@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lab Exam Demo - Form Validation</title>
+</head>
+<body>
+  <form action="form_result.html" name="formValidation" onsubmit="return validate()">
+
+    <label for="textname">Text input</label><br>
+    <input type="text" name="textname" id="textname"><br>
+
+    <label for="phone">Phone</label><br>
+    <input type="text" name="phone" id="phone"><br>
+
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password"><br>
+
+  <input type="submit" name="submit" id="submit" value="Submit Button"><br>
+
+<p id="error"></p>
+  </form>
+
+  <script type="text/javascript">
+
+    function validate(){
+      if ((document.formValidation.textname.value=="")||(document.formValidation.phone.value=="")||(document.formValidation.password.value=="")) {
+        document.getElementById("error").innerHTML="Input cannot be empty";
+        return (false);
+      }
+
+      if (document.formValidation.textname.value.length!=10) {
+        document.getElementById("error").innerHTML="Text must be 10 characters long";
+        return (false);
+      }
+
+      if ((isNaN(document.formValidation.phone.value))|(document.formValidation.phone.value.length!=10)) {
+        document.getElementById("error").innerHTML="Phone number must be 10 digits (numeric) long";
+        return (false);
+      }
+
+      return (true);
+    }
+
+  </script>
+</body>
+</html>

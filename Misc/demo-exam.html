@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo Exam Lab</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // Print prime numbers from 1 to 50
+
+    function factor(n){
+      var count=0;
+      for (var i = 1; i < n; i++) {
+        if (n%i==0) {
+          count++;
+        }
+      }
+      return count;
+    }
+    function prime(){
+      for (var i = 1; i <= 50; i++) {
+        if (factor(i)==1) {
+          document.write("Prime value "+i+"<br>");
+
+        }
+        //prime is only 1 factor
+      }
+    }
+
+  </script>
+  <button onclick="prime()">Prime Numbers</button>
+</body>
+</html>
